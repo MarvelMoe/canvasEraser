@@ -26,7 +26,7 @@ canvas.onmousemove = function(z){
         y: z.pageY - canvasOffset.top //returns distance of cursor relative to the very top of the window
     }
 }
-function drawCursor(){
+function eraseCursor(){
     
     if (clearPreviousPositon){
         // parameter for clearing the canvas 
@@ -40,9 +40,8 @@ function drawCursor(){
     window.requestAnimationFrame(drawCursor);  
     //Instead of setInterval 
 }
- setInterval(function() {
-       drawCursor()
-    }, 1000/50);
 
+       eraseCursor()
+   
 
 })()
