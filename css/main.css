@@ -1,0 +1,26 @@
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0
+}
+
+#canvas {
+  z-index: 100;
+  position:relative;
+}
+
+.img {
+  position: absolute;
+  z-index:1;
+  bottom: 180px;
+  left: 10px
+}
+
+#super {
+  font-weight: bold;
+  font-family: fantasy;
+  text-align: center;
+}
+span {
+  font-size: 14px
+}
